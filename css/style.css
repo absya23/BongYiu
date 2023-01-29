@@ -262,7 +262,9 @@ footer p {
 
 #about {
   width: 100%;
+  min-height: 750px;
   height: 100vh;
+  max-height: 1000px;
   background: url(../images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,9 +299,43 @@ footer p {
   width: 100%;
 }
 
-#main-prods h3 {
+#main-prods .container {
+  gap: 50px;
+}
+
+#main-prods h3,
+#main-prods h6 {
   color: var(--primary-color);
   font-family: var(--body-font-family);
+}
+
+#main-prods .left {
+  width: 350px;
+}
+
+#main-prods .left .cate-item {
+  width: 100%;
+  display: inline-block;
+  color: var(--primary-color);
+  font-family: var(--body-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+#main-prods .left .categories {
+  padding-top: 40px;
+}
+
+#main-prods .left .cate-item.active {
+  background-color: var(--background-color);
+  font-weight: 700;
+}
+
+#main-prods .left .cate-item:hover {
+  background-color: var(--background-color);
 }
 
 #main-prods .pic-item {
@@ -358,6 +394,10 @@ footer p {
   z-index: 10;
   background: rgba(17, 48, 50, 0.3);
   transition: 0.25s;
+}
+
+#main-prods .viewall:hover {
+  text-decoration: underline;
 }
 
 .pagination a {
@@ -505,6 +545,20 @@ footer p {
   border: 0;
   padding: 8px 10px;
   width: 100%;
+}
+
+#prod .btn {
+  width: auto;
+  border: 1px solid #a76550;
+  border-radius: 0px;
+  padding: 2px 20px;
+  font-size: 16px;
+}
+
+#prod .btn:hover {
+  color: var(--white-color);
+  background-color: #a76550;
+  border: 1px solid #a76550;
 }
 
 #prod button.submit {
